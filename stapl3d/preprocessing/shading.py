@@ -608,7 +608,7 @@ def read_tiled_plane(image_in, channel, plane):
         n_tiles = lim.dims[m_idx]
 
         for m in range(n_tiles):
-            data = lim.get_frame(z=plane, c=channel, t=0, m=m, return_as_np=True)
+            data = lim.get_frame(z=plane, c=channel, t=0, m=m)
             dstack.append(data)
 
     else:
